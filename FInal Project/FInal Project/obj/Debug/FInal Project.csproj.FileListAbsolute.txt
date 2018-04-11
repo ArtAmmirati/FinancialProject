@@ -18,3 +18,13 @@ G:\FInal Project\FInal Project\obj\Debug\FInal Project.csproj.GenerateResource.c
 G:\FInal Project\FInal Project\obj\Debug\FInal Project.csproj.CoreCompileInputs.cache
 G:\FInal Project\FInal Project\obj\Debug\FInal Project.exe
 G:\FInal Project\FInal Project\obj\Debug\FInal Project.pdb
+C:\Users\Cyberadmin\Desktop\FinancialProject\FInal Project\FInal Project\bin\Debug\FInal Project.exe.config
+C:\Users\Cyberadmin\Desktop\FinancialProject\FInal Project\FInal Project\bin\Debug\FInal Project.exe
+C:\Users\Cyberadmin\Desktop\FinancialProject\FInal Project\FInal Project\bin\Debug\FInal Project.pdb
+C:\Users\Cyberadmin\Desktop\FinancialProject\FInal Project\FInal Project\obj\Debug\FInal Project.csprojResolveAssemblyReference.cache
+C:\Users\Cyberadmin\Desktop\FinancialProject\FInal Project\FInal Project\obj\Debug\FInal_Project.Form1.resources
+C:\Users\Cyberadmin\Desktop\FinancialProject\FInal Project\FInal Project\obj\Debug\FInal_Project.Properties.Resources.resources
+C:\Users\Cyberadmin\Desktop\FinancialProject\FInal Project\FInal Project\obj\Debug\FInal Project.csproj.GenerateResource.Cache
+C:\Users\Cyberadmin\Desktop\FinancialProject\FInal Project\FInal Project\obj\Debug\FInal Project.csproj.CoreCompileInputs.cache
+C:\Users\Cyberadmin\Desktop\FinancialProject\FInal Project\FInal Project\obj\Debug\FInal Project.exe
+C:\Users\Cyberadmin\Desktop\FinancialProject\FInal Project\FInal Project\obj\Debug\FInal Project.pdb

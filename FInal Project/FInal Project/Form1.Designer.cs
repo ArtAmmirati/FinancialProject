@@ -29,13 +29,13 @@
         private void InitializeComponent()
         {
             this.compoundIntrestGroupBox = new System.Windows.Forms.GroupBox();
+            this.additionsLabel = new System.Windows.Forms.Label();
+            this.outAdditionsTB = new System.Windows.Forms.TextBox();
             this.compoundFreqGB = new System.Windows.Forms.GroupBox();
             this.annuallyRB = new System.Windows.Forms.RadioButton();
             this.semiannuallyRB = new System.Windows.Forms.RadioButton();
             this.quarterlyRB = new System.Windows.Forms.RadioButton();
             this.monthlyRB = new System.Windows.Forms.RadioButton();
-            this.outInterestEarnedLabel = new System.Windows.Forms.Label();
-            this.outInterestEarnedTB = new System.Windows.Forms.TextBox();
             this.outFutureValueTB = new System.Windows.Forms.TextBox();
             this.futureValueLabel = new System.Windows.Forms.Label();
             this.resultsLabel = new System.Windows.Forms.Label();
@@ -51,8 +51,6 @@
             this.prinLabel = new System.Windows.Forms.Label();
             this.inputLabel = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.outAdditionsTB = new System.Windows.Forms.TextBox();
-            this.additionsLabel = new System.Windows.Forms.Label();
             this.compoundIntrestGroupBox.SuspendLayout();
             this.compoundFreqGB.SuspendLayout();
             this.SuspendLayout();
@@ -62,8 +60,6 @@
             this.compoundIntrestGroupBox.Controls.Add(this.additionsLabel);
             this.compoundIntrestGroupBox.Controls.Add(this.outAdditionsTB);
             this.compoundIntrestGroupBox.Controls.Add(this.compoundFreqGB);
-            this.compoundIntrestGroupBox.Controls.Add(this.outInterestEarnedLabel);
-            this.compoundIntrestGroupBox.Controls.Add(this.outInterestEarnedTB);
             this.compoundIntrestGroupBox.Controls.Add(this.outFutureValueTB);
             this.compoundIntrestGroupBox.Controls.Add(this.futureValueLabel);
             this.compoundIntrestGroupBox.Controls.Add(this.resultsLabel);
@@ -85,6 +81,24 @@
             this.compoundIntrestGroupBox.TabStop = false;
             this.compoundIntrestGroupBox.Text = "Compound Interest";
             this.compoundIntrestGroupBox.Enter += new System.EventHandler(this.groupBox1_Enter);
+            // 
+            // additionsLabel
+            // 
+            this.additionsLabel.AutoSize = true;
+            this.additionsLabel.Location = new System.Drawing.Point(11, 388);
+            this.additionsLabel.Name = "additionsLabel";
+            this.additionsLabel.Size = new System.Drawing.Size(82, 13);
+            this.additionsLabel.TabIndex = 17;
+            this.additionsLabel.Text = "Yearly Additions";
+            // 
+            // outAdditionsTB
+            // 
+            this.outAdditionsTB.Location = new System.Drawing.Point(122, 385);
+            this.outAdditionsTB.Name = "outAdditionsTB";
+            this.outAdditionsTB.ReadOnly = true;
+            this.outAdditionsTB.Size = new System.Drawing.Size(197, 20);
+            this.outAdditionsTB.TabIndex = 8;
+            this.outAdditionsTB.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // compoundFreqGB
             // 
@@ -142,24 +156,6 @@
             this.monthlyRB.TabStop = true;
             this.monthlyRB.Text = "Monthly";
             this.monthlyRB.UseVisualStyleBackColor = true;
-            // 
-            // outInterestEarnedLabel
-            // 
-            this.outInterestEarnedLabel.AutoSize = true;
-            this.outInterestEarnedLabel.Location = new System.Drawing.Point(11, 357);
-            this.outInterestEarnedLabel.Name = "outInterestEarnedLabel";
-            this.outInterestEarnedLabel.Size = new System.Drawing.Size(82, 13);
-            this.outInterestEarnedLabel.TabIndex = 16;
-            this.outInterestEarnedLabel.Text = "Interest Earned ";
-            // 
-            // outInterestEarnedTB
-            // 
-            this.outInterestEarnedTB.Location = new System.Drawing.Point(122, 354);
-            this.outInterestEarnedTB.Name = "outInterestEarnedTB";
-            this.outInterestEarnedTB.ReadOnly = true;
-            this.outInterestEarnedTB.Size = new System.Drawing.Size(197, 20);
-            this.outInterestEarnedTB.TabIndex = 7;
-            this.outInterestEarnedTB.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // outFutureValueTB
             // 
@@ -296,24 +292,6 @@
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "groupBox3";
             // 
-            // outAdditionsTB
-            // 
-            this.outAdditionsTB.Location = new System.Drawing.Point(122, 385);
-            this.outAdditionsTB.Name = "outAdditionsTB";
-            this.outAdditionsTB.ReadOnly = true;
-            this.outAdditionsTB.Size = new System.Drawing.Size(197, 20);
-            this.outAdditionsTB.TabIndex = 8;
-            this.outAdditionsTB.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // additionsLabel
-            // 
-            this.additionsLabel.AutoSize = true;
-            this.additionsLabel.Location = new System.Drawing.Point(11, 388);
-            this.additionsLabel.Name = "additionsLabel";
-            this.additionsLabel.Size = new System.Drawing.Size(82, 13);
-            this.additionsLabel.TabIndex = 17;
-            this.additionsLabel.Text = "Yearly Additions";
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -350,8 +328,6 @@
         private System.Windows.Forms.TextBox outFutureValueTB;
         private System.Windows.Forms.Label futureValueLabel;
         private System.Windows.Forms.Label resultsLabel;
-        private System.Windows.Forms.Label outInterestEarnedLabel;
-        private System.Windows.Forms.TextBox outInterestEarnedTB;
         private System.Windows.Forms.GroupBox compoundFreqGB;
         private System.Windows.Forms.RadioButton annuallyRB;
         private System.Windows.Forms.RadioButton semiannuallyRB;

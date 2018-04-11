@@ -36,16 +36,17 @@ namespace FInal_Project
         {
             try
             {
+                // declaring all variables
                 double Principal, Additions, FutureValue, annualContrib;
-                double InterestRate, InterestEarned, RatePerPeriod;
+                double InterestRate, RatePerPeriod;
                 int YearsToGrow, CompoundType;
-               
 
+                // Parsing text to digits
                 Principal = Double.Parse(inPrincipalTB.Text);
                 InterestRate = Double.Parse(inInterestRateTB.Text) / 100;
                 Additions = Double.Parse(inAdditionsTB.Text);
                 YearsToGrow = Int32.Parse(inYearsGrowthTB.Text);
-
+                // establishing Compounding Frequencies
                 if (monthlyRB.Checked)
                     CompoundType = 12;
                 else if (quarterlyRB.Checked)
@@ -55,59 +56,44 @@ namespace FInal_Project
                 else
                     CompoundType = 1;
 
-                
+                // establishing i in the Future Value formula
                 double i = InterestRate / CompoundType;
-                
+                //establishing other variables in Future value formuls
                 int n = YearsToGrow;
                 int c = CompoundType;
                 double l = (n * c);
                 double R = Additions;
-                double x = Math.Pow(1 + i, n);
                 double y = Math.Pow(1 + i, l);
                 double P = Principal;
-             
-                
-
+                // establishing Rateperperiod formula
                 RatePerPeriod = InterestRate / YearsToGrow;
-
+                //Future value with additional deposits established
+                //converting value to string
                 FutureValue = (P * y) + ((R * (y - 1)) / i);
                 outFutureValueTB.Text = FutureValue.ToString("C");
-
+                //establishing the annual contribution portion of Future Value Formula
                 annualContrib = R * (YearsToGrow * 12);
                 outAdditionsTB.Text = annualContrib.ToString("C");
 
-                //InterestEarned =  (FutureValue - annualContrib) - P ;
-                if (P > (FutureValue - annualContrib))
-                    {
-                    InterestEarned = P - (FutureValue - annualContrib);
-                    }
-                 else
-                    {
-                        InterestEarned = (FutureValue - annualContrib) - P;
-                    }
 
-                outInterestEarnedTB.Text = InterestEarned.ToString("C");
+                //outInterestEarnedTB.Text = InterestEarned.ToString("n2");
 
-                inPrincipalTB.Text = Principal.ToString("C");
+                //inPrincipalTB.Text = Principal.ToString();
 
-                inInterestRateTB.Text = InterestRate.ToString("P");
+                //inInterestRateTB.Text = InterestRate.ToString("n2");
 
-                inAdditionsTB.Text = Additions.ToString("C");
-                
-
-
-
+                //inAdditionsTB.Text = Additions.ToString();
 
                 //monthlyContrib = (((Additions * x) - 1)/ i);
                 //FutureValue = (Principal * x) + (monthlyContrib);
                 //InterestEarned = FutureValue - (Principal + monthlyContrib);
 
             }
-            catch (Exception )
+            catch (Exception)
             {
                 MessageBox.Show("Some Information was given in the wrong format!");
 
-               
+
             }
         }
 
@@ -123,7 +109,7 @@ namespace FInal_Project
             inYearsGrowthTB.Text = "";
             inInterestRateTB.Text = "";
             outFutureValueTB.Text = "";
-            outInterestEarnedTB.Text = "";
+            //outInterestEarnedTB.Text = "";
             outAdditionsTB.Text = "";
         }
 
