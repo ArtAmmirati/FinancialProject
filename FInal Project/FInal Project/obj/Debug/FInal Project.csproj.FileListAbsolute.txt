@@ -28,3 +28,4 @@ C:\Users\Cyberadmin\Desktop\FinancialProject\FInal Project\FInal Project\obj\Deb
 C:\Users\Cyberadmin\Desktop\FinancialProject\FInal Project\FInal Project\obj\Debug\FInal Project.csproj.CoreCompileInputs.cache
 C:\Users\Cyberadmin\Desktop\FinancialProject\FInal Project\FInal Project\obj\Debug\FInal Project.exe
 C:\Users\Cyberadmin\Desktop\FinancialProject\FInal Project\FInal Project\obj\Debug\FInal Project.pdb
+C:\Users\Cyberadmin\Desktop\FinancialProject\FInal Project\FInal Project\obj\Debug\FInal_Project.MenuBox.resources
