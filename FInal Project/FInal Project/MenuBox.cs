@@ -19,9 +19,9 @@ namespace FInal_Project
 
         private void CompoundInterestBTN_Click(object sender, EventArgs e)
         {
-            Form1 frmComp = new Form1();
-            this.Hide();
-            frmComp.Show();
+          Form1 frmComp = new Form1();
+          this.Hide();
+          frmComp.Show();
 
 
         }

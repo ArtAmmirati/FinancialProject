@@ -50,13 +50,14 @@
             this.additionLabel = new System.Windows.Forms.Label();
             this.prinLabel = new System.Windows.Forms.Label();
             this.inputLabel = new System.Windows.Forms.Label();
-            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.menuBTN = new System.Windows.Forms.Button();
             this.compoundIntrestGroupBox.SuspendLayout();
             this.compoundFreqGB.SuspendLayout();
             this.SuspendLayout();
             // 
             // compoundIntrestGroupBox
             // 
+            this.compoundIntrestGroupBox.Controls.Add(this.menuBTN);
             this.compoundIntrestGroupBox.Controls.Add(this.additionsLabel);
             this.compoundIntrestGroupBox.Controls.Add(this.outAdditionsTB);
             this.compoundIntrestGroupBox.Controls.Add(this.compoundFreqGB);
@@ -283,21 +284,21 @@
             this.inputLabel.Text = "INPUTS";
             this.inputLabel.Click += new System.EventHandler(this.inputLabel_Click);
             // 
-            // groupBox3
+            // menuBTN
             // 
-            this.groupBox3.Location = new System.Drawing.Point(393, 13);
-            this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(346, 395);
-            this.groupBox3.TabIndex = 2;
-            this.groupBox3.TabStop = false;
-            this.groupBox3.Text = "groupBox3";
+            this.menuBTN.Location = new System.Drawing.Point(227, 235);
+            this.menuBTN.Name = "menuBTN";
+            this.menuBTN.Size = new System.Drawing.Size(103, 47);
+            this.menuBTN.TabIndex = 19;
+            this.menuBTN.Text = "Menu";
+            this.menuBTN.UseVisualStyleBackColor = true;
+            this.menuBTN.Click += new System.EventHandler(this.menuBTN_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(762, 486);
-            this.Controls.Add(this.groupBox3);
+            this.ClientSize = new System.Drawing.Size(395, 470);
             this.Controls.Add(this.compoundIntrestGroupBox);
             this.Name = "Form1";
             this.Text = "Form1";
@@ -314,7 +315,6 @@
 
         private System.Windows.Forms.GroupBox compoundIntrestGroupBox;
         private System.Windows.Forms.Label inputLabel;
-        private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.Button clearBTN;
         private System.Windows.Forms.Button calculateBTN;
         private System.Windows.Forms.TextBox inPrincipalTB;
@@ -335,6 +335,7 @@
         private System.Windows.Forms.RadioButton monthlyRB;
         private System.Windows.Forms.TextBox outAdditionsTB;
         private System.Windows.Forms.Label additionsLabel;
+        private System.Windows.Forms.Button menuBTN;
     }
 }
 

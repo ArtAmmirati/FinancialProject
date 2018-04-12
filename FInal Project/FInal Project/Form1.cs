@@ -37,7 +37,7 @@ namespace FInal_Project
             try
             {
                 // declaring all variables
-                double Principal, Additions, FutureValue, annualContrib;
+                double Principal, Additions, FutureValue, annualContrib, AnnualAdd;
                 double InterestRate, RatePerPeriod;
                 int YearsToGrow, CompoundType;
 
@@ -47,32 +47,42 @@ namespace FInal_Project
                 Additions = Double.Parse(inAdditionsTB.Text);
                 YearsToGrow = Int32.Parse(inYearsGrowthTB.Text);
                 // establishing Compounding Frequencies
+                CompoundType = 0;
+                AnnualAdd = 0;
                 if (monthlyRB.Checked)
-                    CompoundType = 12;
+                {
+                    CompoundType = 12; AnnualAdd = Additions;
+                }
                 else if (quarterlyRB.Checked)
-                    CompoundType = 4;
+                {
+                    CompoundType = 4; AnnualAdd = Additions * 3;
+                }
                 else if (semiannuallyRB.Checked)
-                    CompoundType = 2;
-                else
-                    CompoundType = 1;
-
+                {
+                    CompoundType = 2; AnnualAdd = Additions * 6;
+                }
+                else if (annuallyRB.Checked)
+                {
+                    CompoundType = 1; AnnualAdd = Additions * 12;
+                }
                 // establishing i in the Future Value formula
                 double i = InterestRate / CompoundType;
                 //establishing other variables in Future value formuls
                 int n = YearsToGrow;
                 int c = CompoundType;
                 double l = (n * c);
-                double R = Additions;
+                double R = AnnualAdd;
                 double y = Math.Pow(1 + i, l);
                 double P = Principal;
+                double Z = (y - 1);
                 // establishing Rateperperiod formula
                 RatePerPeriod = InterestRate / YearsToGrow;
                 //Future value with additional deposits established
                 //converting value to string
-                FutureValue = (P * y) + ((R * (y - 1)) / i);
+                FutureValue = (P * y) + ((R*Z)/i);
                 outFutureValueTB.Text = FutureValue.ToString("C");
                 //establishing the annual contribution portion of Future Value Formula
-                annualContrib = R * (YearsToGrow * 12);
+                annualContrib = Additions * (YearsToGrow * 12);
                 outAdditionsTB.Text = annualContrib.ToString("C");
 
 
@@ -88,6 +98,7 @@ namespace FInal_Project
                 //FutureValue = (Principal * x) + (monthlyContrib);
                 //InterestEarned = FutureValue - (Principal + monthlyContrib);
 
+            
             }
             catch (Exception)
             {
@@ -115,6 +126,14 @@ namespace FInal_Project
 
         private void inPrincipalTB_TextChanged(object sender, EventArgs e)
         {
+
+        }
+
+        private void menuBTN_Click(object sender, EventArgs e)
+        {
+            MenuBox menu = new MenuBox();
+            this.Hide();
+            menu.Show();
 
         }
     }
