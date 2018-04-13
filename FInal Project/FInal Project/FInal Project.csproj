@@ -63,10 +63,14 @@
     <Compile Include="MortgageCalculator.designer.cs">
       <DependentUpon>MortgageCalculator.cs</DependentUpon>
     </Compile>
+    <Compile Include="MortgageClass.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MortgageCalculator.resx">
+      <DependentUpon>MortgageCalculator.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

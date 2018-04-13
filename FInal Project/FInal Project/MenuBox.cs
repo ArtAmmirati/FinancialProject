@@ -35,7 +35,7 @@ namespace FInal_Project
 
         private void exitBTN_Click(object sender, EventArgs e)
         {
-            this.Close();
+            Application.Exit();
         }
     }
 }

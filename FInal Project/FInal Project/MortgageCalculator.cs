@@ -45,56 +45,69 @@ namespace FInal_Project
             try
             {
 
-           
-            //declaring variables
-            double PurchasePrice, DownPymt, Rate, MonthlyPymt, LoanAmt, DnPay, Percent;
+                //declaring variables
+                double PurchasePrice, DownPymt, Rate, MonthlyPymt, LoanAmt, Percent, TotalInterest; 
+                    
+                int Term;
                 
-            int Term, n, LoanTerms;
 
                 //parsing text
                 PurchasePrice = double.Parse(inPurchasePriceTB.Text);
+
                 DownPymt = double.Parse(inDownPymtTB.Text);
-                Rate = double.Parse(rateTB.Text);
-                MonthlyPymt = double.Parse(monthlyPymtTB.Text);
 
-                LoanAmt = double.Parse(loanAmtTB.Text);
-              
-                Term = Int32.Parse(termTB.Text);
+                Rate = double.Parse(rateTB.Text) / 100;
+
+                Term = int.Parse(termTB.Text);
+        
                 Percent = double.Parse(inDownPymtTB.Text)/ 100;
-                
 
-                //establishing checked boxes
+              
+                
+                
+                //Checking Percent of purchase price or dollar value
                 if (percentRB.Checked)
                 {
-                    DnPay = PurchasePrice * Percent;
+                    DownPymt = PurchasePrice * Percent;
                 }
                 else if (dollarsRB.Checked)
                 {
-                    DnPay = DownPymt;
+                    DownPymt = double.Parse(inDownPymtTB.Text);
                 }
-                else
-                    DnPay = 0;
-
-                LoanAmt = PurchasePrice - DnPay;
-
+                
+                // checking Years or Months
                 if (yearsRB.Checked)
                 {
-                    LoanTerms = Term * 12;
-                     n = LoanTerms;
+                    Term = Term * 12;
+                     
                 }
                 else if (monthRB.Checked)
                 {
-                    LoanTerms = Term;
-                    n = LoanTerms;
+                    Term = int.Parse(termTB.Text);
+
                 }
 
                 // assigning formula variables
              
-                double P = LoanAmt;
-                double r = Rate / 1200;
-                double x = Math.Pow(1 + r, Term);
-                double A = (P * r * x) / (x - 1);
+                
+                double interest = Rate / 12;
+                LoanAmt = PurchasePrice - DownPymt;
 
+                MonthlyPymt = LoanAmt * ((interest * (Math.Pow(1 + interest, Term))) /
+                              (Math.Pow(1 + interest,Term) - 1));
+
+                TotalInterest = (MonthlyPymt * Term) - LoanAmt;
+
+                double totalAmtPaid = MonthlyPymt * Term;
+
+                // Display the answers
+                loanAmtTB.Text = LoanAmt.ToString();
+
+                monthlyPymtTB.Text = MonthlyPymt.ToString("n2");
+
+                totalInterestPaidTB.Text = TotalInterest.ToString("n2");
+
+                totalAmtPaidTB.Text = totalAmtPaid.ToString("n2");
 
             }
             catch (Exception)
@@ -102,6 +115,21 @@ namespace FInal_Project
 
                 MessageBox.Show("Something is WRONG with your figures");
             }
+        }
+
+        private void loanAmtTB_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

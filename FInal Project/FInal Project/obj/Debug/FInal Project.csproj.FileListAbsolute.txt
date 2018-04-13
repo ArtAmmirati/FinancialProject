@@ -39,3 +39,14 @@ C:\Users\Cyberadmin\Desktop\FinancialProj\FInal Project\FInal Project\obj\Debug\
 C:\Users\Cyberadmin\Desktop\FinancialProj\FInal Project\FInal Project\obj\Debug\FInal Project.exe
 C:\Users\Cyberadmin\Desktop\FinancialProj\FInal Project\FInal Project\obj\Debug\FInal Project.pdb
 C:\Users\Cyberadmin\Desktop\FinancialProj\FInal Project\FInal Project\obj\Debug\FInal_Project.Form1.resources
+C:\Users\Cyberadmin\Desktop\FinancialProj - Copy\FInal Project\FInal Project\bin\Debug\FInal Project.exe.config
+C:\Users\Cyberadmin\Desktop\FinancialProj - Copy\FInal Project\FInal Project\bin\Debug\FInal Project.exe
+C:\Users\Cyberadmin\Desktop\FinancialProj - Copy\FInal Project\FInal Project\bin\Debug\FInal Project.pdb
+C:\Users\Cyberadmin\Desktop\FinancialProj - Copy\FInal Project\FInal Project\obj\Debug\FInal Project.csprojResolveAssemblyReference.cache
+C:\Users\Cyberadmin\Desktop\FinancialProj - Copy\FInal Project\FInal Project\obj\Debug\FInal_Project.Form1.resources
+C:\Users\Cyberadmin\Desktop\FinancialProj - Copy\FInal Project\FInal Project\obj\Debug\FInal_Project.Properties.Resources.resources
+C:\Users\Cyberadmin\Desktop\FinancialProj - Copy\FInal Project\FInal Project\obj\Debug\FInal Project.csproj.GenerateResource.Cache
+C:\Users\Cyberadmin\Desktop\FinancialProj - Copy\FInal Project\FInal Project\obj\Debug\FInal Project.csproj.CoreCompileInputs.cache
+C:\Users\Cyberadmin\Desktop\FinancialProj - Copy\FInal Project\FInal Project\obj\Debug\FInal Project.exe
+C:\Users\Cyberadmin\Desktop\FinancialProj - Copy\FInal Project\FInal Project\obj\Debug\FInal Project.pdb
+C:\Users\Cyberadmin\Desktop\FinancialProj - Copy\FInal Project\FInal Project\obj\Debug\FInal_Project.MortgageCalculator.resources
